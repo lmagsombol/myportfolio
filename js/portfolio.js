@@ -109,4 +109,19 @@
         }
     });
 
+    const modal = document.getElementById('rental-modal');
+
+    $('#openModalBtn').click(function () {
+        modal.style.display = 'block';
+    });
+
+    $('#closeModalBtn').click(function () {
+        modal.style.display = 'none';
+    });
+
+    $('#rental-modal').click(function (e) {
+        if (e.target === this) {
+            this.style.display = 'none'
+        }
+    });
 })(jQuery);

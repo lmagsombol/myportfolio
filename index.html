@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/portfolio.css" rel="stylesheet" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -185,6 +187,9 @@
                             <br />
                             Customer Service Management module, Sales module, PowerApps portal (accounts, cases creation, property access), Power Automate Flows, C# Web API (accessing Dynamics 365 from 3rd party application), Gravity Forms  <br />                                            <br />
                         </p>
+
+                        <a id="openModalBtn">View Project Snapshots</a>
+
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -258,6 +263,33 @@
             <i class="fa fa-github"></i>
         </a>
     </div>
+
+    <div id="rental-modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/rental-portal.png" /></div>
+                    <div class="swiper-slide"><img src="img/api-swagger.png" /></div>
+                    <div class="swiper-slide"><img src="img/rental-app-snapshot.png" /></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <div class="container">
             <div class="row">
@@ -278,6 +310,30 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>

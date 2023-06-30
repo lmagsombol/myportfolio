@@ -121,6 +121,9 @@ header {
     display: block
 }
 
+#openModalBtn:hover{
+    cursor: pointer;
+}
 #mobile-menu-open {
     display: none;
     cursor: pointer;
@@ -791,6 +794,10 @@ footer {
         display: block
     }
 
+    #openModalBtn, #rental-modal {
+        display: none;
+    }
+
     #menu {
         height: 100%;
         overflow-y: auto;
@@ -842,6 +849,12 @@ footer {
 
     .social {
         text-align: center
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    #openModalBtn, #rental-modal {
+        display: none;
     }
 }
 
@@ -940,4 +953,56 @@ footer {
         }
     }
 
+}
+
+@media (min-width: 1120px){
+
+    #openModalBtn{
+        display:block;
+    }
+
+    .swiper, .swiper-slide img {
+        width: 600px;
+        height: 300px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+    }
+
+    .close {
+        float: right;
+        cursor: pointer;
+    }
+
+        .close:hover {
+            color: red;
+        }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 }
