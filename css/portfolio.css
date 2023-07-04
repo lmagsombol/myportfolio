@@ -63,6 +63,7 @@ body {
     }
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -121,9 +122,10 @@ header {
     display: block
 }
 
-#openModalBtn:hover{
+#openModalBtn:hover {
     cursor: pointer;
 }
+
 #mobile-menu-open {
     display: none;
     cursor: pointer;
@@ -135,8 +137,10 @@ header {
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #fff
+    background: #fff;
 }
+
+
 
 #mobile-menu-close {
     display: none;
@@ -147,7 +151,7 @@ header {
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #3498db
+    color: #3498db;
 }
 
     #mobile-menu-close span {
@@ -301,6 +305,13 @@ footer {
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px
+    }
+
+    #lead-content span, #lead-content i, #lead-content a {
+        color: rgb(24,49,83);
+        font-weight: 500;
+        font-size: 1.25em;
+        margin-bottom: 15px;
     }
 
 #lead-overlay {
@@ -771,6 +782,11 @@ footer {
             font-size: 1.75em
         }
 
+        #lead-content span, #lead-content i, #lead-content a {
+            color: rgb(24,49,83);
+            font-size: 1.25em;
+        }
+
     #about {
         text-align: center
     }
@@ -785,10 +801,13 @@ footer {
         position: fixed;
         display: none;
         z-index: 999;
-        animation: none;
-        bottom: 0;
-        height: 100%
+        height: 100%;
     }
+
+        header ul {
+            background-color: rgba(255,255,255, 0.9) !important;
+        }
+
 
     #mobile-menu-open, #mobile-menu-close {
         display: block
@@ -823,6 +842,10 @@ footer {
         padding: 10px 20px
     }
 
+    #lead-content span, #lead-content i, #lead-content a {
+        font-size: 1em;
+    }
+
     #lead-down {
         display: none
     }
@@ -852,7 +875,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1120px){
+@media only screen and (max-width: 1120px) {
     #openModalBtn, #rental-modal {
         display: none;
     }
@@ -871,14 +894,18 @@ footer {
         font-size: 0.9em;
         padding: 5px 10px
     }
+
+    #lead-content span, #lead-content i, #lead-content a {
+        font-size: .9em;
+    }
 }
 
-@media (min-width: 100px){
+@media (min-width: 100px) {
     .side-icons {
         position: fixed;
         top: 50%;
         transform: translateY(-100%);
-        z-index:9999;
+        z-index: 9999;
     }
 
     .fa-facebook, .fa-linkedin {
@@ -952,13 +979,12 @@ footer {
             transform: rotate(-15deg);
         }
     }
-
 }
 
-@media (min-width: 1120px){
+@media (min-width: 1120px) {
 
-    #openModalBtn{
-        display:block;
+    #openModalBtn {
+        display: block;
     }
 
     .swiper, .swiper-slide img {
